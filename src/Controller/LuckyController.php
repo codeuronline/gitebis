@@ -6,6 +6,11 @@ use Symfony\Component\HttpFoundation\Response;
 
 class LuckyController
 {
+    /** 
+     * 
+    */
+    
+     
     public function number(): Response
     {
         $number = random_int(0, 100);
@@ -21,6 +26,7 @@ class LuckyController
                 <title>Page '.$number.'</title>
             </head>
             <body>
-            <h1>le Nouveau site de Référence des Gites</h1></body></html>');
+            <center>
+            <h1>Le Nouveau site de Référence des Gites</h1></center></body></html>');
     }
 }
