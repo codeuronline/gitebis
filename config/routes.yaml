@@ -6,3 +6,6 @@
 app_lucky_number:
     path: /lucky/number
     controller: App\Controller\LuckyController::number
+app_new_page:
+    path: /page/index
+    controller: App\Controller\PageController::index
