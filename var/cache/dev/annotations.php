@@ -62,6 +62,10 @@ return [[
 '[C]Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%23addLink' => 1,
 'Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container' => 0,
 '[C]Symfony%5CBundle%5CFrameworkBundle%5CController%5CAbstractController%24container' => 1,
+'App%5CController%5CLuckyController' => 0,
+'[C]App%5CController%5CLuckyController' => 1,
+'App%5CController%5CLuckyController%23number' => 0,
+'[C]App%5CController%5CLuckyController%23number' => 1,
 'Doctrine%5CBundle%5CDoctrineBundle%5CController%5CProfilerController' => 0,
 '[C]Doctrine%5CBundle%5CDoctrineBundle%5CController%5CProfilerController' => 1,
 'Doctrine%5CBundle%5CDoctrineBundle%5CController%5CProfilerController%23__construct' => 0,
@@ -610,6 +614,6 @@ return [[
 ], [
 
 0 => [],
-1 => 1650450021,
+1 => 1650462612,
 
 ]];
