@@ -4,8 +4,8 @@
 
 # the "app_lucky_number" route name is not important yet
 app_lucky_number:
-    path: /lucky/number
+    path: /number
     controller: App\Controller\LuckyController::number
-app_new_page:
-    path: /page/index
+page:
+    path: /page/
     controller: App\Controller\PageController::index
