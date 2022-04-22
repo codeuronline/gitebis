@@ -8,7 +8,6 @@ class PageController extends AbstractController
 {
   
     public function index() : Response {
-    $index = random_int(0, 100);
     return $this->render('page.html.twig', );
             }
 }

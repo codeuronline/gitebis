@@ -1,5 +1,55 @@
 {% extends "base.html.twig" %}
-{% block title %}Page Registaration{% endblock %}
+{% block title %}Enregistrement {% endblock %}
+ {% block navbar %}<!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      {# <a class="navbar-brand mt-2 mt-lg-0" href="#"> #}
+        <img
+          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+          height="15"
+          alt="MDB Logo"
+          loading="lazy"
+        />
+      {# </a> #}
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/page"><i class="bi bi-home"></i>Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login"><i class="bi bi-person"></i> S'identifier</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/register"><i class="bi bi-person-badge"></i> S'Enregistrer</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->{% endblock %}
 {% block body %}
 <section class="vh-100" style="background-color: #eee;">
   <div class="container h-100">
@@ -10,39 +60,35 @@
             <div class="row justify-content-center">
               <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 
-                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">Sign up</p>
+                <p class="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">S'enregistrer</p>
 
                 <form class="mx-1 mx-md-4">
 
                   <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-user fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="text" id="form3Example1c" class="form-control" />
-                      <label class="form-label" for="form3Example1c">Your Name</label>
+                      <div class="form-outline flex-fill mb-0">
+                      <label class="form-label" for="form3Example1c"><i class="bi bi-person"></i>
+                      <input type="text" id="username" class="form-control" placeholder="Votre nom d'utilisateur"/></label>
+                      </div>
+                  </div>
+
+                  <div class="d-flex flex-row align-items-center mb-4">
+                         <div class="form-outline flex-fill mb-0">
+                      <label class="form-label" for="email"><i class="bi bi-mailbox"></i></label>
+                      <input type="email" id="email" class="form-control" placeholder="Votre mot de passe"/>
                     </div>
                   </div>
 
                   <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input type="email" id="form3Example3c" class="form-control" />
-                      <label class="form-label" for="form3Example3c">Your Email</label>
+                      <label class="form-label" for="password"><i class="bi bi-shield-lock"></i></label>
+                      <input type="password" id="form3Example4c" class="form-control" placeholder="Votre mot de passe"/>
                     </div>
                   </div>
 
                   <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
                     <div class="form-outline flex-fill mb-0">
-                      <input type="password" id="form3Example4c" class="form-control" />
-                      <label class="form-label" for="form3Example4c">Password</label>
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row align-items-center mb-4">
-                    <i class="fas fa-key fa-lg me-3 fa-fw"></i>
-                    <div class="form-outline flex-fill mb-0">
-                      <input type="password" id="form3Example4cd" class="form-control" />
-                      <label class="form-label" for="form3Example4cd">Repeat your password</label>
+                      <label class="form-label" for="form3Example4cd"><i class="bi bi-shield-lock-fill"></i></label>
+                      <input type="password" id="form3Example4cd" class="form-control" placeholder="Ressaisissez votre Mot de passe"/>
                     </div>
                   </div>
 
@@ -54,12 +100,12 @@
                       id="form2Example3c"
                     />
                     <label class="form-check-label" for="form2Example3">
-                      I agree all statements in <a href="#!">Terms of service</a>
+                      Je suis d'accord avec les  <a href="/CGU">CGU/CGV</a>
                     </label>
                   </div>
 
                   <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                    <button type="button" class="btn btn-primary btn-lg">Register</button>
+                    <button type="button" class="btn btn-primary btn-lg">S'enregistrer</button>
                   </div>
 
                 </form>

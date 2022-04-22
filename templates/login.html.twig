@@ -1,17 +1,75 @@
 {% extends "base.html.twig" %}
-{% block title %}Login{% endblock %}
+{% block title %}Identification{% endblock %}
+  {% block navbar %}<!-- Navbar -->
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-mdb-toggle="collapse"
+      data-mdb-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Navbar brand -->
+      <a class="navbar-brand mt-2 mt-lg-0" href="#">
+        <img
+          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
+          height="15"
+          alt="MDB Logo"
+          loading="lazy"
+        />
+      </a>
+      <!-- Left links -->
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="/page"><i class="bi bi-home"></i> Accueil</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/login"><i class="bi bi-person"></i> S'identifier</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/register"><i class="bi bi-person-badge"></i> S'enregistrer</a>
+        </li>
+      </ul>
+      <!-- Left links -->
+    </div>
+    <!-- Collapsible wrapper -->
+
+    
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->{% endblock %}
 {% block body %}
+<section class="vh-100" style="background-color: #eee;">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-lg-12 col-xl-11">
+        <div class="card text-black" style="border-radius: 25px;">
+          <div class="card-body p-md-5">
+            <div class="row justify-content-center">
+              <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
 <form>
   <!-- Email input -->
   <div class="form-outline mb-4">
-    <input type="email" id="form2Example1" class="form-control" />
-    <label class="form-label" for="form2Example1">Email address</label>
+    <input type="email" id="email" class="form-control" placeholder="Saissiez votre Email"/>
+    <label class="form-label" for="form2Example1" ><i class="bi bi-mailbox"></i> Mail</label>
   </div>
 
   <!-- Password input -->
   <div class="form-outline mb-4">
-    <input type="password" id="form2Example2" class="form-control" />
-    <label class="form-label" for="form2Example2">Password</label>
+    <input type="password" id="password" class="form-control" placeholder="Saissiez votre mot de passe"/>
+    <label class="form-label" for="password" ><i class="bi bi-shield-lock"></i> Mot de passe</label>
   </div>
 
   <!-- 2 column grid layout for inline styling -->
@@ -20,38 +78,41 @@
       <!-- Checkbox -->
       <div class="form-check">
         <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-        <label class="form-check-label" for="form2Example31"> Remember me </label>
+        <label class="form-check-label" for="form2Example31"> Se souvenir </label>
       </div>
     </div>
 
     <div class="col">
       <!-- Simple link -->
-      <a href="#!">Forgot password?</a>
+      <a href="#!">Mot de passe oublié?</a>
     </div>
   </div>
 
   <!-- Submit button -->
-  <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
+  <button type="button" class="btn btn-primary btn-block mb-4">Souscrire</button>
 
   <!-- Register buttons -->
   <div class="text-center">
-    <p>Not a member? <a href="/register">Register</a></p>
-    <p>or sign up with:</p>
-    <button type="button" class="btn btn-link btn-floating mx-1">
-      <i class="fab fa-facebook-f"></i>
-    </button>
+    <p>Pas encore de compte? <a href="/register">s'Enregistrer</a></p>
+       <button type="button" class="btn btn-link btn-floating mx-1">
+     </button>
 
     <button type="button" class="btn btn-link btn-floating mx-1">
       <i class="fab fa-google"></i>
     </button>
-
-    <button type="button" class="btn btn-link btn-floating mx-1">
-      <i class="fab fa-twitter"></i>
-    </button>
-
-    <button type="button" class="btn btn-link btn-floating mx-1">
-      <i class="fab fa-github"></i>
-    </button>
-  </div>
+    </div>
 </form>
+              </div>
+              <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp" class="img-fluid" alt="Sample image">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {% endblock %}

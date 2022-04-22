@@ -53,28 +53,25 @@ class __TwigTemplate_08e1ab0b780c1118aa31bc00c7c2f8f355bb21ebb68e1eb75f8656fd698
         // line 5
         $this->displayBlock('title', $context, $blocks);
         echo "</title>
-        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" crossorigin=\"anonymous\">
-        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
-        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css\">
         ";
-        // line 10
+        // line 7
         echo "        ";
         $this->displayBlock('stylesheets', $context, $blocks);
-        // line 14
+        // line 15
         echo "
         ";
-        // line 15
+        // line 16
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 19
+        // line 20
         echo "    </head>
     <body>
     ";
-        // line 21
+        // line 22
         $this->displayBlock('navbar', $context, $blocks);
-        // line 140
+        // line 23
         echo "        ";
         $this->displayBlock('body', $context, $blocks);
-        // line 141
+        // line 24
         echo "    </body>
 </html>
 ";
@@ -105,7 +102,7 @@ class __TwigTemplate_08e1ab0b780c1118aa31bc00c7c2f8f355bb21ebb68e1eb75f8656fd698
 
     }
 
-    // line 10
+    // line 7
     public function block_stylesheets($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -115,13 +112,15 @@ class __TwigTemplate_08e1ab0b780c1118aa31bc00c7c2f8f355bb21ebb68e1eb75f8656fd698
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
 
-        // line 11
+        // line 8
         echo "        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" crossorigin=\"anonymous\">
+        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" crossorigin=\"anonymous\">
+        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
+        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css\">
+        
             ";
-        // line 12
-        echo twig_escape_filter($this->env, call_user_func_array($this->env->getFunction('encore_entry_link_tags')->getCallable(), ["app"]), "html", null, true);
-        echo "
-        ";
+        // line 14
+        echo "        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -130,7 +129,7 @@ class __TwigTemplate_08e1ab0b780c1118aa31bc00c7c2f8f355bb21ebb68e1eb75f8656fd698
 
     }
 
-    // line 15
+    // line 16
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -140,13 +139,11 @@ class __TwigTemplate_08e1ab0b780c1118aa31bc00c7c2f8f355bb21ebb68e1eb75f8656fd698
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 16
-        echo "<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p\" crossorigin=\"anonymous\"></script>
-            ";
         // line 17
-        echo twig_escape_filter($this->env, call_user_func_array($this->env->getFunction('encore_entry_script_tags')->getCallable(), ["app"]), "html", null, true);
-        echo "
-        ";
+        echo "          <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p\" crossorigin=\"anonymous\"></script>
+            ";
+        // line 19
+        echo "        ";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -155,7 +152,7 @@ class __TwigTemplate_08e1ab0b780c1118aa31bc00c7c2f8f355bb21ebb68e1eb75f8656fd698
 
     }
 
-    // line 21
+    // line 22
     public function block_navbar($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -165,125 +162,6 @@ class __TwigTemplate_08e1ab0b780c1118aa31bc00c7c2f8f355bb21ebb68e1eb75f8656fd698
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02 = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->enter($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "navbar"));
 
-        echo "<!-- Navbar -->
-<!-- Navbar -->
-<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
-  <!-- Container wrapper -->
-  <div class=\"container-fluid\">
-    <!-- Toggle button -->
-    <button
-      class=\"navbar-toggler\"
-      type=\"button\"
-      data-mdb-toggle=\"collapse\"
-      data-mdb-target=\"#navbarSupportedContent\"
-      aria-controls=\"navbarSupportedContent\"
-      aria-expanded=\"false\"
-      aria-label=\"Toggle navigation\"
-    >
-      <i class=\"fas fa-bars\"></i>
-    </button>
-
-    <!-- Collapsible wrapper -->
-    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
-      <!-- Navbar brand -->
-      <a class=\"navbar-brand mt-2 mt-lg-0\" href=\"#\">
-        <img
-          src=\"https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp\"
-          height=\"15\"
-          alt=\"MDB Logo\"
-          loading=\"lazy\"
-        />
-      </a>
-      <!-- Left links -->
-      <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">
-        <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Dashboard</a>
-        </li>
-        <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Team</a>
-        </li>
-        <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Projects</a>
-        </li>
-      </ul>
-      <!-- Left links -->
-    </div>
-    <!-- Collapsible wrapper -->
-
-    <!-- Right elements -->
-    <div class=\"d-flex align-items-center\">
-      <!-- Icon -->
-      <a class=\"text-reset me-3\" href=\"#\">
-        <i class=\"fas fa-shopping-cart\"></i>
-      </a>
-
-      <!-- Notifications -->
-      <div class=\"dropdown\">
-        <a
-          class=\"text-reset me-3 dropdown-toggle hidden-arrow\"
-          href=\"#\"
-          id=\"navbarDropdownMenuLink\"
-          role=\"button\"
-          data-mdb-toggle=\"dropdown\"
-          aria-expanded=\"false\"
-        >
-          <i class=\"fas fa-bell\"></i>
-          <span class=\"badge rounded-pill badge-notification bg-danger\">1</span>
-        </a>
-        <ul
-          class=\"dropdown-menu dropdown-menu-end\"
-          aria-labelledby=\"navbarDropdownMenuLink\"
-        >
-          <li>
-            <a class=\"dropdown-item\" href=\"/page\">Page</a>
-          </li>
-          <li>
-            <a class=\"dropdown-item\" href=\"/register\">Register</a>
-          </li>
-          <li>
-            <a class=\"dropdown-item\" href=\"/login\">Login</a>
-          </li>
-        </ul>
-      </div>
-      <!-- Avatar -->
-      <div class=\"dropdown\">
-        <a
-          class=\"dropdown-toggle d-flex align-items-center hidden-arrow\"
-          href=\"#\"
-          id=\"navbarDropdownMenuAvatar\"
-          role=\"button\"
-          data-mdb-toggle=\"dropdown\"
-          aria-expanded=\"false\"
-        >
-          <img
-            src=\"https://mdbcdn.b-cdn.net/img/new/avatars/2.webp\"
-            class=\"rounded-circle\"
-            height=\"25\"
-            alt=\"Black and White Portrait of a Man\"
-            loading=\"lazy\"
-          />
-        </a>
-        <ul
-          class=\"dropdown-menu dropdown-menu-end\"
-          aria-labelledby=\"navbarDropdownMenuAvatar\"
-        >
-          <li>
-            <a class=\"dropdown-item\" href=\"#\">My profile</a>
-          </li>
-          <li>
-            <a class=\"dropdown-item\" href=\"#\">Settings</a>
-          </li>
-          <li>
-            <a class=\"dropdown-item\" href=\"#\">Logout</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- Right elements -->
-  </div>
-  <!-- Container wrapper -->
-</nav>
-<!-- Navbar -->";
         
         $__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02->leave($__internal_319393461309892924ff6e74d6d6e64287df64b63545b994e100d4ab223aed02_prof);
 
@@ -292,7 +170,7 @@ class __TwigTemplate_08e1ab0b780c1118aa31bc00c7c2f8f355bb21ebb68e1eb75f8656fd698
 
     }
 
-    // line 140
+    // line 23
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -317,7 +195,7 @@ class __TwigTemplate_08e1ab0b780c1118aa31bc00c7c2f8f355bb21ebb68e1eb75f8656fd698
 
     public function getDebugInfo()
     {
-        return array (  296 => 140,  159 => 21,  147 => 17,  144 => 16,  134 => 15,  122 => 12,  119 => 11,  109 => 10,  90 => 5,  78 => 141,  75 => 140,  73 => 21,  69 => 19,  67 => 15,  64 => 14,  61 => 10,  54 => 5,  48 => 1,);
+        return array (  174 => 23,  156 => 22,  146 => 19,  143 => 17,  133 => 16,  123 => 14,  116 => 8,  106 => 7,  87 => 5,  75 => 24,  72 => 23,  70 => 22,  66 => 20,  64 => 16,  61 => 15,  58 => 7,  54 => 5,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -327,143 +205,26 @@ class __TwigTemplate_08e1ab0b780c1118aa31bc00c7c2f8f355bb21ebb68e1eb75f8656fd698
     <head>
         <meta charset=\"UTF-8\">
         <title>{% block title %}Page d'accueil!{% endblock %}</title>
-        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" crossorigin=\"anonymous\">
-        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
-        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css\">
         {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
         {% block stylesheets %}
         <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" crossorigin=\"anonymous\">
-            {{ encore_entry_link_tags('app') }}
+        <link href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css\" rel=\"stylesheet\" integrity=\"sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3\" crossorigin=\"anonymous\">
+        <link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>\">
+        <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css\">
+        
+            {# {{ encore_entry_link_tags('app') }} #}
         {% endblock %}
 
         {% block javascripts %}
-<script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p\" crossorigin=\"anonymous\"></script>
-            {{ encore_entry_script_tags('app') }}
+          <script src=\"https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js\" integrity=\"sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p\" crossorigin=\"anonymous\"></script>
+            {# {{ encore_entry_script_tags('app') }} #}
         {% endblock %}
     </head>
     <body>
-    {% block navbar %}<!-- Navbar -->
-<!-- Navbar -->
-<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">
-  <!-- Container wrapper -->
-  <div class=\"container-fluid\">
-    <!-- Toggle button -->
-    <button
-      class=\"navbar-toggler\"
-      type=\"button\"
-      data-mdb-toggle=\"collapse\"
-      data-mdb-target=\"#navbarSupportedContent\"
-      aria-controls=\"navbarSupportedContent\"
-      aria-expanded=\"false\"
-      aria-label=\"Toggle navigation\"
-    >
-      <i class=\"fas fa-bars\"></i>
-    </button>
-
-    <!-- Collapsible wrapper -->
-    <div class=\"collapse navbar-collapse\" id=\"navbarSupportedContent\">
-      <!-- Navbar brand -->
-      <a class=\"navbar-brand mt-2 mt-lg-0\" href=\"#\">
-        <img
-          src=\"https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp\"
-          height=\"15\"
-          alt=\"MDB Logo\"
-          loading=\"lazy\"
-        />
-      </a>
-      <!-- Left links -->
-      <ul class=\"navbar-nav me-auto mb-2 mb-lg-0\">
-        <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Dashboard</a>
-        </li>
-        <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Team</a>
-        </li>
-        <li class=\"nav-item\">
-          <a class=\"nav-link\" href=\"#\">Projects</a>
-        </li>
-      </ul>
-      <!-- Left links -->
-    </div>
-    <!-- Collapsible wrapper -->
-
-    <!-- Right elements -->
-    <div class=\"d-flex align-items-center\">
-      <!-- Icon -->
-      <a class=\"text-reset me-3\" href=\"#\">
-        <i class=\"fas fa-shopping-cart\"></i>
-      </a>
-
-      <!-- Notifications -->
-      <div class=\"dropdown\">
-        <a
-          class=\"text-reset me-3 dropdown-toggle hidden-arrow\"
-          href=\"#\"
-          id=\"navbarDropdownMenuLink\"
-          role=\"button\"
-          data-mdb-toggle=\"dropdown\"
-          aria-expanded=\"false\"
-        >
-          <i class=\"fas fa-bell\"></i>
-          <span class=\"badge rounded-pill badge-notification bg-danger\">1</span>
-        </a>
-        <ul
-          class=\"dropdown-menu dropdown-menu-end\"
-          aria-labelledby=\"navbarDropdownMenuLink\"
-        >
-          <li>
-            <a class=\"dropdown-item\" href=\"/page\">Page</a>
-          </li>
-          <li>
-            <a class=\"dropdown-item\" href=\"/register\">Register</a>
-          </li>
-          <li>
-            <a class=\"dropdown-item\" href=\"/login\">Login</a>
-          </li>
-        </ul>
-      </div>
-      <!-- Avatar -->
-      <div class=\"dropdown\">
-        <a
-          class=\"dropdown-toggle d-flex align-items-center hidden-arrow\"
-          href=\"#\"
-          id=\"navbarDropdownMenuAvatar\"
-          role=\"button\"
-          data-mdb-toggle=\"dropdown\"
-          aria-expanded=\"false\"
-        >
-          <img
-            src=\"https://mdbcdn.b-cdn.net/img/new/avatars/2.webp\"
-            class=\"rounded-circle\"
-            height=\"25\"
-            alt=\"Black and White Portrait of a Man\"
-            loading=\"lazy\"
-          />
-        </a>
-        <ul
-          class=\"dropdown-menu dropdown-menu-end\"
-          aria-labelledby=\"navbarDropdownMenuAvatar\"
-        >
-          <li>
-            <a class=\"dropdown-item\" href=\"#\">My profile</a>
-          </li>
-          <li>
-            <a class=\"dropdown-item\" href=\"#\">Settings</a>
-          </li>
-          <li>
-            <a class=\"dropdown-item\" href=\"#\">Logout</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- Right elements -->
-  </div>
-  <!-- Container wrapper -->
-</nav>
-<!-- Navbar -->{% endblock %}
+    {% block navbar %}{% endblock %}
         {% block body %}{% endblock %}
     </body>
 </html>
-", "base.html.twig", "C:\\laragon\\www\\symfony\\gitebis\\templates\\base.html.twig");
+", "base.html.twig", "C:\\laragon\\www\\Symfony\\gitebis\\templates\\base.html.twig");
     }
 }
