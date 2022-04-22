@@ -1,55 +1,37 @@
 {% extends "base.html.twig" %}
 {% block title %}Enregistrement {% endblock %}
  {% block navbar %}<!-- Navbar -->
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <!-- Container wrapper -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container-fluid">
-    <!-- Toggle button -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-mdb-toggle="collapse"
-      data-mdb-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <i class="fas fa-bars"></i>
+    <a class="navbar-brand" href="/page"><i class="bi bi-globe"></i></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Collapsible wrapper -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Navbar brand -->
-      {# <a class="navbar-brand mt-2 mt-lg-0" href="#"> #}
-        <img
-          src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp"
-          height="15"
-          alt="MDB Logo"
-          loading="lazy"
-        />
-      {# </a> #}
-      <!-- Left links -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/page"><i class="bi bi-home"></i>Accueil</a>
+          <a class="nav-link" href="/page">Accueil
+                    </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/login"><i class="bi bi-person"></i> S'identifier</a>
+          <a class="nav-link" href="/admin">Admin</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active" href="/register"><i class="bi bi-person-badge"></i> S'Enregistrer</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Identifcation</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item active" href="/register">S'Enregistrer</a>
+            <a class="dropdown-item" href="/login">S'Identifier</a>
+          </div>
         </li>
       </ul>
-      <!-- Left links -->
+      <form class="d-flex">
+        <input class="form-control me-sm-2" type="text" placeholder="Recherche">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Recherche</button>
+      </form>
     </div>
-    <!-- Collapsible wrapper -->
-
-    
   </div>
-  <!-- Container wrapper -->
-</nav>
-<!-- Navbar -->{% endblock %}
+</nav>{% endblock %}
 {% block body %}
 <section class="vh-100" style="background-color: #eee;">
   <div class="container h-100">
@@ -93,11 +75,7 @@
                   </div>
 
                   <div class="form-check d-flex justify-content-center mb-5">
-                    <input
-                      class="form-check-input me-2"
-                      type="checkbox"
-                      value=""
-                      id="form2Example3c"
+                    <input class="form-check-input me-2" type="checkbox" value="" id="accord"
                     />
                     <label class="form-check-label" for="form2Example3">
                       Je suis d'accord avec les  <a href="/CGU">CGU/CGV</a>

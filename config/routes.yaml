@@ -3,6 +3,7 @@
 #    controller: App\Controller\DefaultController::index
 
 # the "app_lucky_number" route name is not important yet
+
 page:
     path: /page
     controller: App\Controller\PageController::index
@@ -12,3 +13,6 @@ login:
 register: 
     path: /register
     controller: App\Controller\RegisterController::index
+admin:
+    path: /admin
+    controller : App\Controller\AdminController::index
