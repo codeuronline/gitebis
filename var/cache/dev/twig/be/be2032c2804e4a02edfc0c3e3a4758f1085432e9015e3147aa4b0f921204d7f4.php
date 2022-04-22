@@ -644,6 +644,6 @@ class __TwigTemplate_c23b8419e4c74dba8e800411c2efafe144bec6aeb67a05e20749dbbb6b1
         </div>
     {% endfor %}
 {% endblock %}
-", "@WebProfiler/Collector/notifier.html.twig", "C:\\laragon\\www\\Symfony\\gitebis\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\notifier.html.twig");
+", "@WebProfiler/Collector/notifier.html.twig", "C:\\laragon\\www\\symfony\\gitebis\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\notifier.html.twig");
     }
 }

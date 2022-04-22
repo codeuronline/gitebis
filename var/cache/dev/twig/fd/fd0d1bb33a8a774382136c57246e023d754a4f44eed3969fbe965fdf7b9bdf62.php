@@ -222,6 +222,6 @@ class __TwigTemplate_04a3ac6d037c2ff1243dbc3c886220c81a28b3b76e52e74b5368bbf77b3
         {% block body '' %}
     </body>
 </html>
-", "@WebProfiler/Profiler/base.html.twig", "C:\\laragon\\www\\Symfony\\gitebis\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\base.html.twig");
+", "@WebProfiler/Profiler/base.html.twig", "C:\\laragon\\www\\symfony\\gitebis\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\base.html.twig");
     }
 }

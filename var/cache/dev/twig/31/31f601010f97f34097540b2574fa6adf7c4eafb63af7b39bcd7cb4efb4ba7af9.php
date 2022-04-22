@@ -227,6 +227,6 @@ class __TwigTemplate_3dc3d82c613cee9cca7a7ac6b1d5372ddbd42ca8de44df2f9fae92d52b7
         </div>
     </form>
 </div>
-", "@WebProfiler/Profiler/search.html.twig", "C:\\laragon\\www\\Symfony\\gitebis\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\search.html.twig");
+", "@WebProfiler/Profiler/search.html.twig", "C:\\laragon\\www\\symfony\\gitebis\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\search.html.twig");
     }
 }
