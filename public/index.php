@@ -9,5 +9,5 @@
 // };
 require_once 'models.php';
 $post= get_all_posts();
-require 'templates/list.php';
+require_once 'templates/list.php';
 ?>

@@ -1,8 +1,8 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
-
 # the "app_lucky_number" route name is not important yet
+# accueil
 
 page:
     path: /page
@@ -16,3 +16,21 @@ register:
 admin:
     path: /admin
     controller : App\Controller\AdminController::index
+add:
+    path: /add
+    controller : App\Controller\addController::index
+update:
+    path: update
+    controller : App\Controller\updateController::index
+delete:
+    path:delete
+    controller : App\Controller\delete\Controller::index
+see: 
+    path: /see
+    controller : App\Controller\seeController::index
+select:
+    path: /select
+    controller: App\Controller\selectController::index
+reserve:
+    path: /reserve
+    controller: App\Controller\reserve'Controller::index
