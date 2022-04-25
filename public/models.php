@@ -3,7 +3,7 @@
 // model.php
 function open_database_connection()
 {
-    $connection = new PDO("mysql:host=localhost;dbname=blog_db", 'myuser', 'mypassword');
+    $connection = new PDO("mysql:host=localhost;dbname=gitebis", 'root', '');
 
     return $connection;
 }
